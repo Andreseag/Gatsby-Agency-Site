@@ -119,5 +119,48 @@ const SectionTwo = styled.section`
       margin-bottom: 5rem;
     }
   `
+const SectionThree = styled.section`
+  background-color: #2b343d;
+  color: #ffffff;
+`
 
-export { Banner, TextWrapper, MoreText, SectionTwo }
+const FlexBoxIndex = styled.div`
+  display: flex;
+  .image {
+    width: ${props => props.inverse ? "60%0" : "40%"};
+  }
+  img {
+    width: 100%;
+  }
+  .text__section3 {
+    width: ${props => props.inverse ? "40%0" : "60%"};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.225em;
+    margin: 0;
+  }
+  p {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.075em;
+    font-size: 1.5rem;
+  }
+`
+
+const GenericPara = styled.p`
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: ${props => props.lessSpacing ? "0.075em" : "0.225em"};
+  font-size: ${props => props.lessSize ? "1.5rem" : "2.5rem"};
+  line-height: ${props => props.lessSize ? "2rem" : "3rem"};
+  color: ${props => props.grey ? "#c8ece9" : "#ffffff"};  
+`
+export { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara}
