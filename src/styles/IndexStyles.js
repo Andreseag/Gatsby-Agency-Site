@@ -163,4 +163,14 @@ const GenericPara = styled.p`
   line-height: ${props => props.lessSize ? "2rem" : "3rem"};
   color: ${props => props.grey ? "#c8ece9" : "#ffffff"};  
 `
+
+const GenericH2 = styled.h2`
+  font-size: 3rem;
+  padding: ${props => props.none ? "0" : "1.35em 0"};
+  color: #ffffff;
+  border-bottom: ${props => props.none ? "0" : "2px solid #1d9c91"};
+  text-transform: uppercase;
+  letter-spacing: 0.225em;
+  margin: 0;
+`
 export { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara}

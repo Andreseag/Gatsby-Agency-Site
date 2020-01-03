@@ -27,7 +27,7 @@ export default () => (
   <SectionTwo>
     <div>
       <h2>Our Passion</h2>
-      <GenericPara>
+      <GenericPara lessSize grey>
         Most good programers do programing not because they expect to get paid,
         but because it's fun to programer.
       </GenericPara>
@@ -62,17 +62,17 @@ export default () => (
   <SectionThree>
     <FlexBoxIndex>
       <div className="image">
-        <img src="pic01.jpg" alt="pic01" />
+        <img src="pic02.jpg" alt="pic01" />
       </div>
       <div className="text__section3">
         <h2>Website Development</h2>
-        <GenericPara>We hand code beautiful websites using HTML, CSS3, JS because they are fully coustomizab</GenericPara>
+        <GenericPara lessSize lessSpacing>We hand code beautiful websites using HTML, CSS3, JS because they are fully coustomizab</GenericPara>
       </div>
     </FlexBoxIndex>
     <FlexBoxIndex inverse>
       <div className="text__section3">
         <h2>Website Design</h2>
-        <GenericPara>We have talented and experienced Web Designer, who can design beautiful and usable web</GenericPara>
+        <GenericPara lessSize lessSpacing>We have talented and experienced Web Designer, who can design beautiful and usable web</GenericPara>
       </div>
       <div className="image">
         <img src="pic02.jpg" alt="pic02" />
@@ -80,11 +80,11 @@ export default () => (
     </FlexBoxIndex>
     <FlexBoxIndex>
       <div className="image">
-        <img src="pic03.jpg" alt="pic03" />
+        <img src="pic02.jpg" alt="pic03" />
       </div>
       <div className="text__section3">
         <h2>Mobile App Development</h2>
-        <GenericPara>We develop Mobile apps in Reactive Native, which can be used in both ios and Android</GenericPara>
+        <GenericPara lessSize lessSpacing>We develop Mobile apps in Reactive Native, which can be used in both ios and Android</GenericPara>
       </div>
     </FlexBoxIndex>
   </SectionThree>
