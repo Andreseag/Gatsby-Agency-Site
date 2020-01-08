@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara } from "../styles/IndexStyles";
+import { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara, GenericH2, SectionFour } from "../styles/IndexStyles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faHeart, faCode, faGem, fas } from '@fortawesome/free-solid-svg-icons';
@@ -26,7 +26,7 @@ export default () => (
   </section>
   <SectionTwo>
     <div>
-      <h2>Our Passion</h2>
+      <GenericH2>Our Passion</GenericH2>
       <GenericPara lessSize grey>
         Most good programers do programing not because they expect to get paid,
         but because it's fun to programer.
@@ -65,13 +65,13 @@ export default () => (
         <img src="pic02.jpg" alt="pic01" />
       </div>
       <div className="text__section3">
-        <h2>Website Development</h2>
+        <GenericH2>Website Development</GenericH2>
         <GenericPara lessSize lessSpacing>We hand code beautiful websites using HTML, CSS3, JS because they are fully coustomizab</GenericPara>
       </div>
     </FlexBoxIndex>
     <FlexBoxIndex inverse>
       <div className="text__section3">
-        <h2>Website Design</h2>
+        <GenericH2>Website Design</GenericH2>
         <GenericPara lessSize lessSpacing>We have talented and experienced Web Designer, who can design beautiful and usable web</GenericPara>
       </div>
       <div className="image">
@@ -83,10 +83,50 @@ export default () => (
         <img src="pic02.jpg" alt="pic03" />
       </div>
       <div className="text__section3">
-        <h2>Mobile App Development</h2>
+        <GenericH2 none>Mobile App Development</GenericH2>
         <GenericPara lessSize lessSpacing>We develop Mobile apps in Reactive Native, which can be used in both ios and Android</GenericPara>
       </div>
     </FlexBoxIndex>
   </SectionThree>
+  <SectionFour>
+    <div className="header__section4">
+      <div className="titile__section4">
+        <GenericPara>
+          We use modern and latest technologies which helps our clients <br/>
+          as they are highly scalable and maintanable.
+        </GenericPara>
+      </div>
+    </div>
+    <div className="grid__section4">
+      <div className="item1" style={{backgroundColor: '#3D508E'}}>
+        <div className="flex__section4">
+          <FontAwesomeIcon icon={faReact} color="#00FFCC" size="3x" fixedWidth />
+          <GenericH2 none>React</GenericH2>
+        </div>
+        <GenericPara lessSize lessSpacing grey>
+          Modern JavaScrip framework witch will make your web 
+          at the same time, handy for every user.
+        </GenericPara>
+      </div>
+      <div className="item2" style={{backgroundColor: '4A4D89'}}>
+        <div className="fex__section4">
+          <FontAwesomeIcon icon="code" color='#00FFCC' size='3x' fixedWidth />
+          <GenericH2 none>React Native</GenericH2>
+        </div>
+        <GenericPara lessSize lessSpacing grey>
+          Cross-platform for mobile app development based on
+          whose resulting code is compiled to Android and IOS.
+        </GenericPara>
+      </div>
+      <div className="item3" style={{ backgroundColor: '#484A83' }}>
+        <div className="flex__section4">
+          <FontAwesomeIcon icon={faJs} color="00FFCC" size="3x" fixedWidth />
+          <GenericH2 none>
+            JavaScrip
+          </GenericH2>
+        </div>
+      </div>
+    </div>
+  </SectionFour>
   </>
 )

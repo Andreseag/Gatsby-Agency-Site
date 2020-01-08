@@ -127,13 +127,13 @@ const SectionThree = styled.section`
 const FlexBoxIndex = styled.div`
   display: flex;
   .image {
-    width: ${props => props.inverse ? "60%0" : "40%"};
+    width: ${props => props.inverse ? "60%" : "40%"};
   }
   img {
     width: 100%;
   }
   .text__section3 {
-    width: ${props => props.inverse ? "40%0" : "60%"};
+    width: ${props => props.inverse ? "40%" : "60%"};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,4 +173,19 @@ const GenericH2 = styled.h2`
   letter-spacing: 0.225em;
   margin: 0;
 `
-export { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara}
+
+const SectionFour = styled.section`
+  background-color: #505393;
+  color: #ffffff;
+  text-align: center;
+  .header__section4 {
+    font-size: 3rem;
+    padding: 1.35em 0;
+    color: #ffffff;
+    border-bottom: 2px solid #464981;
+    text-transform: uppercase;
+    letter-spacing: 0.225em;
+    margin: 0;
+  }
+`
+export { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara, GenericH2, SectionFour}
