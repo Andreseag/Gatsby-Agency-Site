@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara, GenericH2, SectionFour } from "../styles/IndexStyles";
+import { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, SectionFour, FlexBoxIndex, GenericPara, GenericH2 } from "../styles/IndexStyles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faHtml5, faJs, faReact, faCss3, faGalacticSenate } from '@fortawesome/free-brands-svg-icons'
 import { faHeart, faCode, faGem, fas } from '@fortawesome/free-solid-svg-icons';
 
-library.add( faHeart, faCode, faGem, fas );
+library.add( faHeart, faCode, faGem, fab, fas );
 
 export default () => (
   <>
@@ -98,7 +99,7 @@ export default () => (
       </div>
     </div>
     <div className="grid__section4">
-      <div className="item1" style={{backgroundColor: '#3D508E'}}>
+      <div className="item1" style={{backgroundColor: '#4D508E'}}>
         <div className="flex__section4">
           <FontAwesomeIcon icon={faReact} color="#00FFCC" size="3x" fixedWidth />
           <GenericH2 none>React</GenericH2>
@@ -108,8 +109,8 @@ export default () => (
           at the same time, handy for every user.
         </GenericPara>
       </div>
-      <div className="item2" style={{backgroundColor: '4A4D89'}}>
-        <div className="fex__section4">
+      <div className="item2" style={{backgroundColor: '#  4A4D89'}}>
+        <div className="flex__section4">
           <FontAwesomeIcon icon="code" color='#00FFCC' size='3x' fixedWidth />
           <GenericH2 none>React Native</GenericH2>
         </div>
@@ -122,11 +123,19 @@ export default () => (
         <div className="flex__section4">
           <FontAwesomeIcon icon={faJs} color="00FFCC" size="3x" fixedWidth />
           <GenericH2 none>
-            JavaScrip
+            JavaScript
           </GenericH2>
         </div>
+        <GenericPara lessSize lessSpacing grey>
+          Javascript is the lenguage of the web.
+          It is used for Web Development, mobile development and app development and everyth
+        </GenericPara>
       </div>
+      {/* <div className="item4" style={{ backgroundColor: '#45477E' }}></div> */}
     </div>
   </SectionFour>
+  <section style={{ position: 'relative' }}>
+    <Banner parallax></Banner>
+  </section>
   </>
 )

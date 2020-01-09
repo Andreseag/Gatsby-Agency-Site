@@ -3,12 +3,13 @@ const Banner = styled.div`
   &:after{
     content: '';
     display: block;
-    height: 100vh;
+    height: ${props => props.parallax ? '80vh' : '100vh'};
     width: 100%;
     background-image: url("banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: ${props => props.parallax ? 'fixed' : 'scroll'};
     filter: grayscale(100%) blur(2px);
   }
 `;
@@ -187,5 +188,26 @@ const SectionFour = styled.section`
     letter-spacing: 0.225em;
     margin: 0;
   }
+  .grid__section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 66%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  .grid__section4 > * {
+    padding: 3rem;
+  }
+  .flex__section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .flex__section4 > h2 {
+    margin-left: 1rem;
+  }
 `
+
+
 export { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara, GenericH2, SectionFour}
