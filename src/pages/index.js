@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, SectionFour, FlexBoxIndex, GenericPara, GenericH2 } from "../styles/IndexStyles";
+import { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, SectionFour, FormFive, FlexBoxIndex, GenericPara, GenericH2 } from "../styles/IndexStyles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faHtml5, faJs, faReact, faCss3, faGalacticSenate } from '@fortawesome/free-brands-svg-icons'
@@ -136,6 +136,19 @@ export default () => (
   </SectionFour>
   <section style={{ position: 'relative' }}>
     <Banner parallax></Banner>
+    <FormFive>
+      <form name="contact_us" method="POST" data-netlify="true">
+        <div className="fields">
+          <GenericH2 none>Contact Us</GenericH2>
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <textarea name="message" id="message" placeholder="Message" rows="7" />
+          <div className="actions">
+            <input type="submit" value="Send Message" className="button__primary" />
+          </div>
+        </div>
+      </form>
+    </FormFive>
   </section>
   </>
 )

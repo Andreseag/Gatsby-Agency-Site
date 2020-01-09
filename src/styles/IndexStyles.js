@@ -208,6 +208,48 @@ const SectionFour = styled.section`
     margin-left: 1rem;
   }
 `
+const FormFive = styled.div`
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  form > .fields {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  input[type="text"],input[type="email"],textarea{
+    appearance: none;
+    font-size: 2rem;
+    background-color: rgba(144, 144, 144, 0.75);
+    border-radius: 3px;
+    border: none;
+  }
+  input[type="text"],input[type="email"]{
+    height: 2.75em;
+    padding: 0.75em 1em;
+  }
+  textarea{
+    padding: 0.75em 1em;
+  }
+  .button__primary{
+    background-color: #ed4933;
+    box-shadow: none;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.225em;
+    padding: 1.8rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+`
 
-
-export { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara, GenericH2, SectionFour}
+export { Banner, TextWrapper, MoreText, SectionTwo, SectionThree, FlexBoxIndex, GenericPara, GenericH2, SectionFour, FormFive}
