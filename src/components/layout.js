@@ -16,7 +16,7 @@ export default ({ childern }) => (
       </div>
       <div className="copyright">
         <span>&copy; 2019, GeekyHacker | </span>
-        <span>Made with ❤️ and ☕ in Colombia</span>
+        <span role="img">Made with ❤️ and ☕ in Colombia</span>
       </div>
     </Footer>
   </div>
